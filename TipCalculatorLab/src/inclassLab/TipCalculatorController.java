@@ -34,6 +34,7 @@ public class TipCalculatorController {
     	tax = (amount * .06);
     	tip = ((amount + tax) *.15);
     	total = (amount + tax + tip);
+    	
     	lblTax.setText(money.format(tax));
     	lblTip.setText(money.format(tip));
     	lblTotal.setText(money.format(total));
