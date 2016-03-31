@@ -5,11 +5,15 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button fx:id="btnCalculate" layoutX="254.0" layoutY="320.0" mnemonicParsing="false" onAction="#calculateTip" text="Calculate" />
       <TextField fx:id="tfBill" layoutX="40.0" layoutY="47.0" promptText="Enter bill total" />
-      <Label fx:id="lblTotal" layoutX="292.0" layoutY="192.0" />
+      <Label fx:id="lblTax" layoutX="254.0" layoutY="192.0" />
+      <Label layoutX="173.0" layoutY="226.0" text="Tip" />
+      <Label layoutX="173.0" layoutY="192.0" text="Tax" />
+      <Label fx:id="lblTip" layoutX="254.0" layoutY="226.0" />
+      <Label layoutX="167.0" layoutY="265.0" text="Total" />
+      <Label fx:id="lblTotal" layoutX="254.0" layoutY="265.0" />
    </children>
 </AnchorPane>
