@@ -18,17 +18,25 @@ public class TipCalculatorController {
     private TextField tfBill;
 
     @FXML
+    private Label lblTax;
+
+    @FXML
+    private Label lblTip;
+
+    @FXML
     private Label lblTotal;
 
-    private double amount=0, tax=0, tip=0;
+    private double amount=0, tax=0, tip=0, total =0;
     
     @FXML
     void calculateTip() {
     	amount = Double.parseDouble(tfBill.toString());
     	tax = (amount * .06);
     	tip = ((amount + tax) *.15);
-    	
-    	lblTotal.setText(money.format(amount));
+    	total = (amount + tax + tip);
+    	lblTax.setText(money.format(tax));
+    	lblTip.setText(money.format(tip));
+    	lblTotal.setText(money.format(total));
     }
 
 }
