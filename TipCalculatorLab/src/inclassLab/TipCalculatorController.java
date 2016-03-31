@@ -30,7 +30,7 @@ public class TipCalculatorController {
     
     @FXML
     void calculateTip() {
-    	amount = Double.parseDouble(tfBill.toString());
+    	amount = Double.parseDouble(tfBill.getText());
     	tax = (amount * .06);
     	tip = ((amount + tax) *.15);
     	total = (amount + tax + tip);

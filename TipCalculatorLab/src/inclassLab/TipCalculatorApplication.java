@@ -14,7 +14,7 @@ public class TipCalculatorApplication extends Application{
 
 	@Override
 	public void start(Stage stage) throws Exception {
-		Parent parent = FXMLLoader.load(TipCalculatorApplication.class.getResource("Calculator.fxml"));
+		Parent parent = FXMLLoader.load(TipCalculatorApplication.class.getResource("TipCalculator.fxml"));
 		
 		Scene scene = new Scene(parent);
 		
