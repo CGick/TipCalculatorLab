@@ -27,6 +27,8 @@ public class TipCalculatorController {
     	amount = Double.parseDouble(tfBill.toString());
     	tax = (amount * .06);
     	tip = ((amount + tax) *.15);
+    	
+    	lblTotal.setText(money.format(amount));
     }
 
 }
